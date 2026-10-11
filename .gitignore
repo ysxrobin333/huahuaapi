@@ -1,0 +1,30 @@
+# ── 密钥与本地配置（最重要）──────────────────────────────
+# env 文件里是 API Key，一旦提交泄露即可被盗刷。
+# 仓库只提交模板 env.sample，真实 env 一律不入库。
+.env
+.env.*
+*.env
+huahuaapi.env
+env
+!env.sample
+!assets/templates/env.sample
+
+# ── 生成产物 ─────────────────────────────────────────────
+*.mp4
+*.mov
+*.webm
+*.png
+*.jpg
+*.jpeg
+outputs/
+out/
+
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── 系统 ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
